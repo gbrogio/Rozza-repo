@@ -1,0 +1,32 @@
+.footerContainer{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: -1;
+  top: 450%;
+  width: 100vw;
+  left: 0;
+  justify-content: center;
+  background-color: var(--header-bg)!important;
+  box-shadow: -1rem 2rem 10rem #000;
+}
+@media screen and (max-width: 767px) {
+  .footerContainer{
+    top: 890%;
+  }
+}
+@media screen and (max-width: 740px) {
+  .footerContainer{
+    top: 880%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .footerContainer{
+    top: 810%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .footerContainer{
+    top: 830%;
+  }
+}

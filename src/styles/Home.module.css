@@ -1,0 +1,128 @@
+.Top{
+  position: absolute;
+  top: 5rem;
+  left: 3rem;
+}
+.logoMarcaContainer{
+  align-items: center;
+  display: flex;
+  font-family: "JetBrains Mono", sans-serif;
+  font-size: 5rem;
+  font-style: italic;
+  font-weight: 700;
+  padding: 0rem;
+  padding-left: 0rem;
+  z-index: 999;
+  color: var(--text);
+  text-shadow: 0 0 9rem var(--text-light);
+}
+.logoMarcaContainer p.logoPrimaryWorld{
+  font-size: 8rem;
+  margin-top: 2.8rem;
+}
+.Top p.description{
+  font-family: "JetBrains Mono", sans-serif;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 10.2rem;
+  left: 5rem;
+  font-style: italic;
+  font-weight: 700;
+  color: var(--second-red);
+  text-shadow: 0 0 3rem var(--second-red);
+}
+.Top a{
+  position: relative;
+  left: 5rem;
+  transition: .8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.Top a:hover{
+  box-shadow: 0 0 5rem var(--second-red);
+  transform: scale(1.2);
+}
+.formContainer h1{
+  font-family: 'Allura';
+  font-weight: 600; 
+  font-size: 5rem;
+  color: var(--text);
+  text-align: center;
+  position: relative;
+  top: 45rem;
+  transition: .8s ease-in-out;
+}
+.footerContainer{
+  position: relative;
+  top: 50rem;
+}
+.cardSlider{
+  position: relative;
+  top: 37rem;
+  left: 2rem;
+  margin-right: 4rem;
+  justify-content: center;
+  z-index: 10;
+}
+.cardSlider h1{
+  font-family: 'Allura';
+  font-weight: 600; 
+  font-size: 5rem;
+  color: var(--text);
+  text-align: center;
+}
+.cardSlider__CarouselIndicators{
+  position: relative;
+}
+.cardSlider__ControlsTop{
+  display: flex;
+  justify-content: space-between;
+}
+.card{
+  margin-top: 1.5rem;
+  text-align: center;
+}
+.card h2{
+  margin-left: -.5rem;
+}
+.card p{
+  margin-top: 0.5rem;
+  margin-left: -.2rem;
+}
+.card a{
+  margin-top: 0.5rem;
+  margin-left: -.5rem;
+}
+.background{
+  background-color: var(--app-bg);
+  width: 100vw;
+  height: 360vh;
+  top: 40rem;
+  position: absolute;
+  z-index: -1;
+}
+.mainBanner img{
+  top: -5.7rem;
+  position: absolute;
+  width: 100vw;
+  height: 115vh;
+  z-index: -3;
+  opacity: 1;
+}
+.BannerToBg img{
+  fill: #1B1B1D;
+  top: 3.5rem;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+}
+@media screen and (max-width: 767px) {
+  .mainBanner img{
+    display: none;
+  }
+  .cardSlider{
+    position: relative;
+    top: 40rem;
+    padding: 0.2rem;
+    justify-content: center;
+  }
+}

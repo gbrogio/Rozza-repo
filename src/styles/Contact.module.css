@@ -1,0 +1,9 @@
+.formContainer{
+  color: var(--text);
+  padding: 2rem;
+  margin-top: 7rem;
+}
+.footerContainer{
+  position: relative;
+  top: 5rem;
+}

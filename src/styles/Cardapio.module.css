@@ -1,0 +1,114 @@
+.footerContainer{
+  position: relative;
+  top: 20rem;
+}
+.mainBannerCardapio img{
+  background-image: url(/public/img/rozza_bannerCardapio.png);
+  top: 3rem;
+  position: absolute;
+  width: 85rem;
+  height: 130vh;
+  z-index: -3;
+  opacity: .3;
+}
+.itensContainer div div a{
+  position: relative;
+  top: 1rem;
+  padding: 1rem;
+}
+.itensContainer div div h5{
+  margin-top: -5rem;
+}
+.cardSlider{
+  position: relative;
+  top: 10rem;
+  left: 2rem;
+  margin-right: 4rem;
+  justify-content: center;
+}
+.cardSlider h1{
+  font-family: 'Allura';
+  font-weight: 600; 
+  font-size: 5rem;
+  color: var(--text);
+  text-align: center;
+}
+.card{
+  margin-top: 1.5rem;
+  text-align: center;
+}
+.card h2{
+  margin-left: -1.5rem;
+}
+.card p{
+  margin-top: 0.5rem;
+  margin-left: -.2rem;
+}
+.card a{
+  margin-top: 0.5rem;
+  margin-left: -.5rem;
+}
+.background{
+  background-color: var(--app-bg);
+  width: 100vw;
+  height: 200vh;
+  top: 40rem;
+  position: absolute;
+  z-index: -1;
+}
+.mainBanner img{
+  top: -5.7rem;
+  position: absolute;
+  width: 85rem;
+  height: 115vh;
+  z-index: -3;
+}
+.BannerToBg img{
+  fill: #1B1B1D;
+  top: 3.5rem;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+}
+@media screen and (max-width: 767px) {
+  .mainBannerCardapio img{
+    background-image: url(/public/img/rozza_bannerCardapio.png);
+    top: 3rem;
+    position: absolute;
+    width: 85rem;
+    height: 130vh;
+    z-index: -3;
+    opacity: .3;
+  }
+  .cardSlider{
+    position: relative;
+    top: 40rem;
+    padding: 0.2rem;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footerContainer{
+    top: 410rem;
+  }
+  .cardSlider{
+    top: 5rem;
+  }
+}
+@media screen and (max-width: 740px) {
+  .footerContainer{
+    top: 10rem;
+  }
+  .cardSlider{
+    top: 4rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .footerContainer{
+    top: 10rem;
+  }
+  .cardSlider{
+    top: 7rem;
+  }
+}

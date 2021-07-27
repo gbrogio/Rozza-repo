@@ -1,0 +1,8 @@
+.formContainer {
+  position: relative;
+  top: 50rem;
+  color: var(--text) !important;
+}
+.formContainer h6 {
+  color: var(--app-bg);
+}/*# sourceMappingURL=FormPedido.module.css.map */

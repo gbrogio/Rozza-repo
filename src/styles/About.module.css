@@ -1,0 +1,59 @@
+.aboutRozza h1{
+  font-family: 'Allura';
+  font-weight: 600; 
+  font-size: 5rem;
+  color: var(--text-light);
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+}
+.aboutRozza{
+  position: relative;
+  top: 30rem;
+  font-size: 1rem;
+  color: var(--text);
+  text-align: center;
+  padding: 6rem;
+}
+
+.background{
+  background-color: var(--app-bg);
+  width: 100vw;
+  height: 360vh;
+  top: 40rem;
+  position: absolute;
+  z-index: -1;
+}
+.mainBanner img{
+  top: -5.7rem;
+  position: absolute;
+  width: 100vw;
+  height: 115vh;
+  z-index: -3;
+  opacity: 1;
+}
+.BannerToBg img{
+  fill: #1B1B1D;
+  top: 3.5rem;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+}
+.footerContainer{
+  position: relative;
+  top: 30rem;
+}
+@media screen and (max-width: 767px) {
+  .mainBanner img{
+    display: none;
+  }
+  .aboutRozza{
+    position: relative;
+    top: 1rem;
+    font-size: 1rem;
+    color: var(--text);
+    text-align: left;
+    padding: 1rem;
+  }
+}

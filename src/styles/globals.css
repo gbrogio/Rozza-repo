@@ -1,0 +1,172 @@
+::-webkit-scrollbar {
+  width: 0.6rem;
+  height: 0.6rem;
+  margin-right: 10px;
+}
+::-webkit-scrollbar-corner {
+  border: none;
+  background: none;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--second-red);
+  border-radius: 3px;
+  cursor: move;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border: none;
+}
+:root{
+  /* Cores */
+  --blue: #0d6efd;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #d63384;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #198754;
+  --teal: #20c997;
+  --cyan: #0dcaf0;
+  --text: #e1e2e6;
+  --text-light: rgb(247, 247, 247);
+  --text-secondary: #828287;
+  --header-bg: #232326;
+  --app-bg: #1b1b1e;
+  --cards-bg: #202024;
+  --btns: #238741;
+  --second-red: #dc3545;
+
+  /* Sombra */
+  --shadow: rgb(18 18 20) 0px 1rem 2rem;
+
+}
+/* Tira a borda da página */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: var(--app-bg);
+  overflow-x: hidden;
+}
+/* Tira a decoração da âncora */
+a {
+  text-decoration: none;
+}
+/* Tira a decoração das listas */
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* Tira as margens das marcações de texto */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+/* Aplica o cursor pointer nos elementos âncora e botão */
+a:hover, button:hover {
+  cursor: pointer;
+}
+/* Classe criada para desabilitar a visualização de um icone sem aplicar "display: none" 
+para não prejudicar de leitores de tela como NVDA */
+.viewDisabled{
+  border: none;
+  opacity: 0;
+  overflow-x: hidden;
+  position: absolute;
+  right: 99999rem;
+}
+.scrolled{
+  background: var(--header-bg)!important;
+  height: 72px;
+  width: 100vw;
+}
+.btn{
+  background-color: var(--cards-bg)!important;
+  color: var(--text)!important;
+  font-size: larger;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  font-style: italic;
+  font-family: "JetBrains Mono", sans-serif!important;
+  font-weight: bolder!important;
+}
+.navActive{
+  color: var(--text)!important;
+  border-bottom: 2px solid var(--second-red)!important;
+  font-weight: bolder!important;
+}
+.animateLeftToRight{
+  animation: left-to-right 1.5s cubic-bezier(0.55, -0.05, 0.35, 0.90);
+}
+.animateRightToLeft{
+  animation: right-to-left 500s cubic-bezier(0.55, -0.05, 0.35, 0.90)!important;
+}
+
+.animateTopToBottom{
+  animation: top-to-bottom 1s ease-in-out;
+}
+.animateBottomToTop{
+  animation: bottom-to-top 1.5s cubic-bezier(0.55, -0.05, 0.35, 0.90);
+}
+
+.animateEmerge{
+  animation: emerge 1.5s cubic-bezier(0.55, -0.05, 0.35, 0.90);
+}
+
+@keyframes left-to-right{
+  from{
+    margin-left: -10rem;
+    opacity: 0;
+  }
+  to{
+    margin-left: 0rem;
+    opacity: 1;
+  }
+}
+@keyframes right-to-left{
+  from{
+    margin-right: -10rem!important;
+    opacity: 0!important;
+  }
+  to{
+    margin-right: 0rem!important;
+    opacity: 1!important;
+  }
+}
+
+@keyframes top-to-bottom{
+  from{
+    margin-top: -4rem;
+    opacity: 0;
+  }
+  to{
+    margin-top: 0rem;
+    opacity: 1;
+  }
+}
+@keyframes bottom-to-top{
+  from{
+    margin-top: 100rem;
+    opacity: 0;
+  }
+  to{
+    margin-top: 0rem;
+    opacity: 1;
+  }
+}
+
+@keyframes emerge {
+  from{
+    opacity: 0;
+  } to{
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 767px) {
+  .active{
+    border: 2px solid var(--second-green)!important;
+  }
+}

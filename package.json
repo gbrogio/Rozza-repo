@@ -1,0 +1,29 @@
+{
+  "name": "gbrogio_site-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@popperjs/core": "2.9.2",
+    "bootstrap": "^5.0.1",
+    "jquery": "^3.6.0",
+    "mdbreact": "^5.0.2",
+    "next": "10.2.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "rellax": "^1.12.1",
+    "sass": "^1.34.0"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.3.1",
+    "@types/react": "17.0.6",
+    "@types/rellax": "^1.7.3",
+    "bootstrap-icons": "^1.5.0",
+    "jQuery": "^1.7.4",
+    "typescript": "4.2.4"
+  }
+}
